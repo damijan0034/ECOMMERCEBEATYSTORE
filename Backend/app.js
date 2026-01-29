@@ -4,6 +4,9 @@ import { errorHandler, notFound } from "./Middleware/error.middleware.js";
 import cookieParser from "cookie-parser";
 import authRoutes from "./routes/auth.route.js";
 import productRoutes from "./routes/product.route.js";
+import bannerRoutes from "./routes/banner.route.js";
+import userRoutes from "./routes/user.route.js";
+import orderRoutes from "./routes/order.route.js";
 
 const app=express();
 
@@ -19,6 +22,9 @@ app.use(cookieParser());
 //routes
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/products", productRoutes);
+app.use("/api/v1/banners", bannerRoutes);
+app.use("/api/v1/users", userRoutes);
+app.use("/api/v1/orders", orderRoutes);
 
 //error middleware
 app.use(notFound);
