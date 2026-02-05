@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className="flex items-center justify-between px-6 h-[100px]  shadow-md">
       <div className='m-2 cursor-pointer'>
-         <img src="blisslogo1.png" alt="Bliss Logo" height={150} width={150} />
+         <img src="/blisslogo1.png" alt="Bliss Logo" height={150} width={150} />
       </div>
     <div className='flex items-center m-2'>
         <input type="text" placeholder='search'
