@@ -1,11 +1,11 @@
 import StarRatings from 'react-star-ratings';
 
-const Product = () => {
+const Product = ({img}) => {
   return (
      <div className="flex flex-col items-center
         justify-center m-[20px] h-[500px] cursor-pointer
         ">
-        <img src="serum.jpg" alt="serum"
+        <img src={img} alt="serum"
           className="bg-cover w-[300px] h-[400px]"
         />
         <h2 className='font-semibold text-[18px]'>Rosehip seed,oil argan</h2>

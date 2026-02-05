@@ -10,7 +10,7 @@ const Footer = () => {
       {/* UPPER PART */}
       <div className='flex justify-between'>
         <div>
-          <img src="blisslogo1.png" alt="logo" width={200} height={200} />
+          <img src="/blisslogo1.png" alt="logo" width={200} height={200} />
           <p className='mt-2 text-gray-600'>LET MAKE YOUR SKIN FLOURISH WITH OUR PRODUCTS</p>
         </div>
         <div>
