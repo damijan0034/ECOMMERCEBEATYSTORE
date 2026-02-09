@@ -79,7 +79,7 @@ const SingleProduct = () => {
                         />
                         <span className="font-semibold mx-[20px]">John K.</span>
                     </div>
-                     <div className="flex items-center">
+                    <div className="flex items-center">
                         <StarRatings
                             rating={3.403}
                             starDimension="25px"

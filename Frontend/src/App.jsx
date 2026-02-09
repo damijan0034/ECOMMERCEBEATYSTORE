@@ -6,6 +6,9 @@ import Footer from './components/Footer.jsx'
 import { Outlet, RouterProvider, createBrowserRouter } from 'react-router'
 import Announcment from './components/Announcment.jsx'
 import SingleProduct from './pages/SingleProduct.jsx'
+import Cart from './pages/Cart.jsx'
+import Login from './pages/Login.jsx'
+import Register from './pages/Register.jsx'
 
 function App() {
 
@@ -36,6 +39,18 @@ function App() {
         {
           path: '/product/:id',
           element: <SingleProduct />
+        },
+        {
+          path: '/cart',
+          element: <Cart />
+        },
+        {
+          path: '/login',
+          element: <Login />
+        },
+        {
+          path: '/create-account',
+          element: <Register />
         }
       ]
     }

@@ -1,11 +1,11 @@
 import {FaRegIdBadge, FaSearch, FaShoppingBasket, FaUser} from "react-icons/fa"
-
+import { Link } from "react-router";
 
 const Navbar = () => {
   return (
     <div className="flex items-center justify-between px-6 h-[100px]  shadow-md">
       <div className='m-2 cursor-pointer'>
-         <img src="/blisslogo1.png" alt="Bliss Logo" height={150} width={150} />
+        <Link to="/"><img src="/blisslogo1.png" alt="Bliss Logo" height={150} width={150} /></Link>
       </div>
     <div className='flex items-center m-2'>
         <input type="text" placeholder='search'
@@ -18,20 +18,25 @@ const Navbar = () => {
     </div>
 
     <div className="flex items-center space-x-6">
-      <div className="cursor-pointer">
+      <Link to="/cart">
+       <div className="cursor-pointer">
         <div className="absolute top-[60px] right-32 bg-pink-700 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
           2
 
         </div>
         <FaShoppingBasket className="text-pink-500" />
       </div>
-      <div className="flex items-center space-x-2 border border-pink-300
+      </Link>
+     
+      <Link to="/login">
+        <div className="flex items-center space-x-2 border border-pink-300
         rounded-lg hover:bg-pink-100 duration-300 p-2 cursor-pointer
       ">
         <FaUser  className="text-[#e455c5] hover:text-pink-600
          transition duration-300" />
         <span className="text-[#e455c5] font-semibold hover:text-pink-600" >Login</span>
       </div>
+      </Link>
     </div>
       </div>
   )
