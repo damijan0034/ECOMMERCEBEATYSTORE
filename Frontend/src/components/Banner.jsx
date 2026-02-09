@@ -2,7 +2,7 @@
 
 const Banner = () => {
   return (
-    <div className="relative bg-[url('beautybanner2.jpg')] 
+    <div className="relative bg-[url('/beautybanner2.jpg')] 
     bg-cover  h-[80vh] bg-repeat-none
     
     ">
