@@ -9,6 +9,8 @@ import SingleProduct from './pages/SingleProduct.jsx'
 import Cart from './pages/Cart.jsx'
 import Login from './pages/Login.jsx'
 import Register from './pages/Register.jsx'
+import ProductList from './pages/ProductList.jsx'
+import Order from './pages/Order.jsx'
 
 function App() {
 
@@ -41,8 +43,16 @@ function App() {
           element: <SingleProduct />
         },
         {
+          path: '/products/:searchterm',
+          element: <ProductList />
+        },
+        {
           path: '/cart',
           element: <Cart />
+        },
+        {
+          path: '/myorders',
+          element: <Order />
         },
         {
           path: '/login',
