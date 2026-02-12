@@ -4,6 +4,8 @@ import Menu from "./components/Menu.jsx"
 import Home from "./pages/Home.jsx"
 import Users from "./pages/Users"
 import Products from "./pages/Products"
+import Orders from "./pages/Orders.jsx"
+import Banners from "./pages/Banners.jsx"
 
 function App() {
 
@@ -37,6 +39,14 @@ function App() {
         {
           path:"/products",
           element:<Products />
+        },
+         {
+          path:"/orders",
+          element:<Orders />
+        },
+        {
+          path:"/banners",
+          element:<Banners />
         },
       ]
     }
